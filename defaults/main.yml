@@ -1,3 +1,4 @@
 ---
 # defaults file for zadanie_roles
 destin: /home/admin1/nginx
+workdir: /home/admin1/nginx

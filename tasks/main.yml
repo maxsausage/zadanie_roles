@@ -11,4 +11,4 @@
   ignore_errors: yes
 
 - name: Run docker-compose
-  shell: cd /home/admin1/nginx/ && docker compose up -d
+  shell: cd {{ workdir }} && docker compose up -d
