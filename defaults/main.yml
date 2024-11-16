@@ -2,3 +2,8 @@
 # defaults file for zadanie_roles
 destin: /home/admin1/nginx
 workdir: /home/admin1/nginx
+ports: 80
+registry: 192.168.56.102:5000
+tag: v5
+project_name: zadanienginx
+rights: 0644
