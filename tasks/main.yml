@@ -1,0 +1,10 @@
+---
+# tasks file for zadanie_roles
+- name: Pull docker image on Fedora
+  shell: docker pull 192.168.56.102:5000/zadanienginx:v2
+
+- name:
+  template: src=docker-compose.j2 dest={{ destin }}/docker-compose.yml mode=0644
+
+- name: Run docker-compose
+  shell: cd /home/admin1/nginx/ && docker compose up -d

@@ -1,0 +1,11 @@
+services:
+  web-server:
+     image: 192.168.56.102:5000/zadanienginx:v5
+     container_name: zadanie-nginx
+#    volumes:
+#      - '/opt/web/html:/var/www/html'
+     ports:
+       - '80:80'
+     restart: unless-stopped
+networks:
+ default:
