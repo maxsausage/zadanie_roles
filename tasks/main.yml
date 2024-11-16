@@ -6,5 +6,9 @@
 - name:
   template: src=docker-compose.j2 dest={{ destin }}/docker-compose.yml mode=0644
 
+- name: Stop Docker-compose
+  shell: docker compose stop
+  ignore_errors: yes
+
 - name: Run docker-compose
   shell: cd /home/admin1/nginx/ && docker compose up -d
