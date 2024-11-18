@@ -1,0 +1,9 @@
+---
+- name: Zadanie
+  hosts: fedora
+  become: yes
+
+
+
+  roles:
+      - zadanie_roles
