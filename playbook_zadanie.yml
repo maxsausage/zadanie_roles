@@ -1,9 +1,7 @@
 ---
 - name: Zadanie
-  hosts: fedora
+  hosts: ubuntu2
   become: yes
-
-
 
   roles:
       - zadanie_roles
