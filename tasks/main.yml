@@ -1,12 +1,12 @@
 ---
 # tasks file for zadanie_roles
-- name: Pull docker image on Fedora
+- name: Pull docker image on Ubuntu2
   shell: docker pull {{ registry }}/{{ project_name }}:{{ tag }}
 
 - name:
 
   template: src=docker-compose.j2 dest={{ destin }}/docker-compose.yml
-            mode={{ rights }}
+            mode=0644
 
 - name: Stop Docker-compose
   shell: docker compose stop
